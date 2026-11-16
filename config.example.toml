@@ -1,0 +1,20 @@
+# Copy this file to config.toml and edit the paths. Relative paths start at this folder.
+
+# The output of release/1_segment_images.ipynb, with the photo database:
+#   seahorse_photo_database.xlsx   sheets "Photos" and "Individual_Summary"
+#   segmented/                     full-resolution masked crops (*.png)
+#   segmented_compressed/          the same crops, longest edge 2048 (*.jpg)
+data_root = "/path/to/sam3_results"
+
+# The uncropped photographs, named SH<individual>_<observation>_<photo>.jpg.
+photographs = "/path/to/photographs"
+
+# The checkpoint that release/2_finetune_miewid.ipynb writes. Its folder names the training
+# run, and that name keys the fine-tuned embedding cache, so a new run never reuses old vectors.
+miewid_checkpoint = "cache/<run>/best_miewid_arcface.pt"
+
+# Embedding caches, ALIKED/LightGlue pair caches, checkpoints, and the DINOv3 weights in models/.
+cache_dir = "cache"
+
+# The figures.
+output_dir = "outputs"

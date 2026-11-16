@@ -1,0 +1,6 @@
+# Machine-specific paths; copy config.example.toml.
+config.toml
+# Derived artefacts and generated figures.
+cache/
+outputs/
+.ipynb_checkpoints/

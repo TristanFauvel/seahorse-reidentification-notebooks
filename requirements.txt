@@ -1,0 +1,23 @@
+# Python 3.11 or newer. Install with:
+#   pip install -r requirements.txt
+#   pip install "lightglue @ git+https://github.com/cvg/LightGlue.git"   # not on PyPI
+numpy>=1.26
+pandas>=2.0
+scipy>=1.11
+scikit-learn>=1.4
+matplotlib>=3.8
+pillow>=10.0
+openpyxl>=3.1                  # reads the photo database
+opencv-python>=4.8             # RANSAC verification
+tqdm>=4.66
+torch>=2.4
+torchvision>=0.19
+transformers>=5.0              # SAM 3
+safetensors>=0.4
+huggingface-hub>=0.24
+open-clip-torch>=2.24          # BioCLIP 2.5
+pytorch-metric-learning>=2.5   # sub-centre ArcFace
+jupyterlab>=4.0
+itables>=2.0                   # sortable, searchable, scrollable tables
+jinja2>=3.1                    # pandas Styler: the LaTeX tables
+skrub>=0.6                     # TableReport: a table with a summary of each column
